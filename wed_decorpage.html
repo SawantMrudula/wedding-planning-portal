@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Decor Catalog</title>
+ <link rel="stylesheet" href="wed_decorpage.css">
+ <link rel="stylesheet" type="text/css" href="nav.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" type="image/x-icon" href="logo_.png" />
+
+
+ </head>
+ <body>
+
+ <nav class="navbar navbar-expand-md">
+  <!-- container -->
+  <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <input type='checkbox' id='toggle-menu' />
+          <label type="button" class='toggle-btn' for='toggle-menu'>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </label>
+      </button>
+      <div class="collapse navbar-collapse">
+          <!-- ms-auto -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    SERVICES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="wed_decorpage.html">DECORATORS</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="wed_musicpage.html">MUSICIANS</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="wed_caterpage.html">CATERERS</a></li>
+                </ul>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="booking.html">BOOKINGS</a>
+              </li>
+              
+          </ul>
+      </div>
+  </div>
+</nav>
+<main>
+
+   
+ <section class="product">
+ <img src="./wed_images/wed_decor1.jpg" alt="Product 1">
+ <h2>Majestic Weddings</h2>
+ <p>Rs.75,000</p>
+ <button class="addtocart">
+    <a>Add to Cart</a>
+</button>
+
+ </section>
+ 
+ <section class="product">
+ <img src="./wed_images/wed_decor2.jpg" alt="Product 2">
+ <h2>Elegant Affairs</h2>
+ <p>Rs.1,00,000</p>
+ <button>
+    <a href="booking1.html">Add to Cart</a>
+</button>
+
+ </section>
+
+ <section class="product">
+  <img src="./wed_images/wed_decor3.jpg" alt="Product 3">
+  <h2>Blissful Moments</h2>
+  <p>Rs.1,50,000</p>
+  <button>
+    <a href="booking1.html">Add to Cart</a>
+</button>
+
+  </section>
+
+  <section class="product">
+    <img src="./wed_images/wed_decor4.png" alt="Product 4">
+    <h2>The Wedding Company</h2>
+    <p>Rs.90,000</p>
+    <button>
+        <a href="booking1.html">Add to Cart</a>
+    </button>
+
+    <div class="container"> 
+   
+        <div id="alerts"></div>
+     <div class="productcont">
+             <div class="product">
+                 <h3 class="productname">Product 1</h3>
+                 <p>Product description excerpt...</p>
+                 <p class="price">$5.05</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+                 <h3 class="productname">Product 2</h3>
+                 <p>Product description excerpt...</p>
+                 <p class="price">$8.50</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+                 <h3 class="productname">Product 3</h3>
+                 <p>Product description excerpt...</p>
+                 <p class="price">$10.50</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             </div>
+             <div class="cart-container">
+               <h2>Cart</h2>
+               <table>
+                 <thead>
+                   <tr>
+                   <th><strong>Product</strong></th>
+                   <th><strong>Price</strong></th>
+                 </tr>
+                 </thead>
+                 <tbody id="carttable">
+                 </tbody>
+               </table>
+               <hr>
+               <table id="carttotals">
+                 <tr>
+                   <td><strong>Items</strong></td>
+                   <td><strong>Total</strong></td>
+                 </tr>
+                 <tr>
+                   <td>x <span id="itemsquantity">0</span></td>
+                  
+                   <td>$<span id="total">0</span></td>
+                 </tr></table>
+     
+                 
+               <div class="cart-buttons">  
+                 <button id="emptycart">Empty Cart</button>
+                 <button id="checkout">Checkout</button>
+               </div>
+             </div>
+     </div>
+    
+    </section>
+    <div class="cart-container">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+            <th><strong>Product</strong></th>
+            <th><strong>Price</strong></th>
+          </tr>
+          </thead>
+          <tbody id="carttable">
+          </tbody>
+        </table>
+        <hr>
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+           
+            <td>$<span id="total">0</span></td>
+          </tr></table>
+
+          
+        <div class="cart-buttons">  
+          <button id="emptycart">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+
+   </main>  
+   <script  src="./js/script.js"></script> 
+ </body>
+ </html> 
